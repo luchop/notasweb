@@ -1,0 +1,15 @@
+Módulos ------------
+1. Registro de notas individual
+2. Registro de notas tipo planilla
+3. Subida de archivo con nombres de alumnos
+4. Creación de grupos
+5. Creación de columnas de notas
+6. Registro de nuevo usuario
+7. Configuración de reporte (acta)
+8. Reporte tipo acta en PDF
+9. Reporte tipo acta en Excel
+
+Notas --------------
+4 y 5 debe haberlo una sola persona porque son muy similares
+8 y 9 debe haberlo una sola persona porque son muy similares
+7 debe tener un editor y evaluador de fórmulas matemáticas

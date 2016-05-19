@@ -1,0 +1,43 @@
+Especificaciones:
+
+ - Multiusuario. Una BD para todos los docentes de cualquier carrera.
+ - Importación de alumnos en formato Excel (Nombre (1 o 3 columnas), CI)
+ - Registro de nuevos alumnos (Nombres y CI)
+ - Calificaciones (hasta 10 notas, c/u con % y titulo personalizado)
+ - Registro de notas tipo planilla o individual
+ - Exportación de notas a Excel (o CSV)
+ 
+**------------------
+
+Diseño BD (1 docente):
+
+ - alumno(CodAlumno, Paterno, Materno, Nombres, CI)
+ - grupo(CodGrupo, Nombre)
+ - nota(CodNota, CodGrupo, CodAlumno, n0, n1, n2, n3, n4, n5, n6, n7, n8, n9)
+ - grupo_alumno(CodGrupo, CodAlumno)
+ 
+**------------------
+
+Diseño BD (muchos docentes):
+
+ - docente(CodDocente, Apellido, Nombre)
+ - alumno(CodAlumno, Paterno, Materno, Nombres, CI)
+ - grupo(CodGrupo, Nombre, CodDocente)
+ - nota(CodNota, CodGrupo, CodAlumno, n0, n1, n2, n3, n4, n5, n6, n7, n8, n9)
+ - grupo_alumno(CodGrupo, CodAlumno)
+ - otras tablas para manejo de usuarios y sesiones
+ 
+**-------------------
+
+Módulos:
+
+ - Usuarios (ion_auth)
+ - Importación de Excel (PHPExcel)
+ - ABC alumnos 
+ - Registro de notas tipo planilla
+ - Registro de notas individual
+ - Registro de porcentajes y títulos de columnas de notas
+ - Configuración y exportación de notas a Excel (o CSV)
+ 
+**-------------------
+
