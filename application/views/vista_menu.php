@@ -27,19 +27,14 @@
 		  </ul>
 		</li>
 		
-        <li class="dropdown">
-		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Grupos/paralelos/materias <span class="caret"></span></a>
-		  <ul class="dropdown-menu" role="menu">
-			<li><a href="<?php echo site_url('Grupo/Nuevo'); ?>">Nuevo alumno </a></li>
-			<li><a href="<?php echo site_url('Grupo/Modificacion'); ?>">Modificación datos grupo </a></li>
-		  </ul>
-		</li>
+        <li><a href="<?php echo site_url('Grupo'); ?>">Cursos</a></li>
 		
         <li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reportes <span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
 			<li><a href="<?php echo site_url('Reporte/RegistroPDF'); ?>">Registro de notas (PDF) </a></li>
             <li><a href="<?php echo site_url('Reporte/RegistroXLS'); ?>">Registro de notas (Excel) </a></li>
+            <li role="separator" class="divider"></li>
             <li><a href="<?php echo site_url('Varios/ConfiguracionReporte'); ?>">Configuración del registro de notas </a></li>
 		  </ul>
 		</li>
@@ -47,9 +42,9 @@
         <li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configuración <span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
-			<li><a href="<?php echo site_url('Varios/CambiaClave'); ?>">Cambia contraseña </a></li>
+			<li><a href="<?php echo site_url('Actividad'); ?>">Definición de actividades evaluativas</a></li>
+            <li><a href="<?php echo site_url('Varios/CambiaClave'); ?>">Cambia contraseña </a></li>
             <li><a href="<?php echo site_url('Varios/ImportacionXLS'); ?>">Importación de nombres (Excel) </a></li>
-            <li><a href="<?php echo site_url('Varios/ConfiguracionNotas'); ?>">Configuración de notas </a></li>
 		  </ul>
 		</li>
 				

@@ -34,9 +34,9 @@ CREATE TABLE IF NOT EXISTS grupo_alumno (
 CREATE TABLE IF NOT EXISTS actividad (
   CodActividad INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CodGrupo int not null,
-  Titulo varchar(20),
-  Porcentaje tinyInt,
-  SegundoTurno char(1) default 'N',
+  Nombre varchar(20),
+  MaxNota tinyInt,
+  Activo char(1) default 'S',
   INDEX fk_actividad_idx (CodGrupo),
   CONSTRAINT fk_actividad_1 FOREIGN KEY (CodGrupo) REFERENCES grupo(CodGrupo) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
